@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DE7B4FCD-CE16-4C71-B59B-A2B4CEADBA08}</ProjectGuid>
+    <ProjectGuid>{B0138CBF-A11A-4F54-AD14-2D9217D90F27}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Model</RootNamespace>
-    <AssemblyName>Model</AssemblyName>
+    <RootNamespace>Utilities</RootNamespace>
+    <AssemblyName>Utilities</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <FileUpgradeFlags>
@@ -39,51 +39,38 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Book.cs" />
-    <Compile Include="Chapter.cs" />
-    <Compile Include="Bookmark.cs" />
-    <Compile Include="Distance.cs" />
-    <Compile Include="Letter.cs" />
-    <Compile Include="Position.cs" />
-    <Compile Include="Statistic.cs" />
-    <Compile Include="Translation.cs" />
-    <Compile Include="Recitation.cs" />
-    <Compile Include="Selection.cs" />
-    <Compile Include="Phrase.cs" />
-    <Compile Include="Quarter.cs" />
-    <Compile Include="Prostration.cs" />
-    <Compile Include="Bowing.cs" />
-    <Compile Include="Group.cs" />
-    <Compile Include="Part.cs" />
-    <Compile Include="Station.cs" />
-    <Compile Include="Page.cs" />
-    <Compile Include="Verse.cs" />
+    <Compile Include="BigInteger.cs" />
+    <Compile Include="Calculator.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="HungarianAlgorithm.cs" />
+    <Compile Include="MouseSimulator.cs" />
+    <Compile Include="Numbers.cs" />
+    <Compile Include="PrivateStorage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Enums.cs" />
-    <Compile Include="Word.cs" />
-    <Compile Include="WordInfo.cs">
+    <Compile Include="Downloader.cs">
+      <SubType>Component</SubType>
     </Compile>
-    <Compile Include="WordPart.cs">
-    </Compile>
-    <Compile Include="WordPartFeatureDictionary.cs">
-    </Compile>
-    <Compile Include="WordPartFeatures.cs">
-    </Compile>
+    <Compile Include="PublicStorage.cs" />
+    <Compile Include="Radix.cs" />
+    <Compile Include="TextAnalyzer.cs" />
+    <Compile Include="Window.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Numbers\e.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Numbers\phi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Numbers\pi.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Globals\Globals.csproj">
       <Project>{B749FCA9-B5AF-45E7-9C65-140BC0A90F79}</Project>
       <Name>Globals</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Utilities\Utilities.csproj">
-      <Project>{B0138CBF-A11A-4F54-AD14-2D9217D90F27}</Project>
-      <Name>Utilities</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Data\quran-metadata.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
